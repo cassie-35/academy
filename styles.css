@@ -1,0 +1,167 @@
+:root {
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-azul: #01164D;
+    --color-celeste: #297FB6;
+    --color-marron: #956C3E;
+
+    --fuente-titulos: 'Oswald', sans-serif;
+    --fuente-subtitulos: 'Montserrat', sans-serif;
+    --fuente-parrafos: 'Lato', sans-serif;
+    --fuente-botones: 'Montserrat', sans-serif;
+    --fuente-menu: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-parrafos);
+    font-size: 1rem;
+    background: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 1em 0;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    height: 3rem; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    font-family: var(--fuente-menu);
+    font-size: 0.875rem;
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-marron);
+}
+
+.social-icons a {
+    color: var(--color-blanco);
+    font-size: 1.25rem;
+    margin-left: 1em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--color-marron);
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('imagenes/banner-inicio.png') no-repeat center center/cover;
+    color: var(--color-blanco);
+    padding: 2em;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.125rem;
+    margin: 1em 0;
+    font-family: var(--fuente-parrafos);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-family: var(--fuente-botones);
+    font-weight: bold;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--color-marron);
+}
+
+#btnSubir {
+    position: fixed;
+    bottom: 2em;
+    right: 1.5em;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+#btnSubir:hover {
+    background: var(--color-marron);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+}

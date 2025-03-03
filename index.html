@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Aprende Gratis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logo-blanco.png" alt="Academy Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/academy._learn/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/51950689401" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section>
+
+    <button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section><section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section><section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section><section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section><section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section><section class="banner">
+        <div class="banner-content">
+            <h1>Aprende sin límites, completamente gratis</h1>
+            <p>Accede a cursos de calidad y mejora tus habilidades sin costo.</p>
+            <a href="#" class="btn">Explora los cursos</a>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll', function () {
+            let btn = document.getElementById('btnSubir');
+            if (window.scrollY > 300) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+
+        document.getElementById('btnSubir').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>

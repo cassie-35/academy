@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --color-blanco: #FFFFFF;
+            --color-negro: #000000;
+            --color-azul: #01164D;
+            --color-marron: #956C3E;
+            --color-azul-claro: #297FB6;
+            
+            --fuente-titulos: 'Oswald', sans-serif;
+            --fuente-subtitulos: 'Montserrat', sans-serif;
+            --fuente-parrafos: 'Lato', sans-serif;
+            --fuente-botones: 'Montserrat', sans-serif;
+            --fuente-menu: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fuente-parrafos);
+            background: var(--color-blanco);
+            color: var(--color-negro);
+        }
+
+        header {
+            width: 100%;
+            background: var(--color-azul);
+            padding: 1em 0;
+            color: var(--color-blanco);
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section-nosotros {
+            padding: 4em 2em;
+            text-align: center;
+        }
+
+        .section-nosotros h1 {
+            font-family: var(--fuente-titulos);
+            font-size: 2.5rem;
+            color: var(--color-azul);
+            margin-bottom: 0.5em;
+        }
+
+        .section-nosotros p {
+            font-size: 1.125rem;
+            color: var(--color-negro);
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .valores {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-top: 3em;
+        }
+
+        .valor {
+            background: var(--color-azul-claro);
+            color: var(--color-blanco);
+            padding: 1.5em;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .valor h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            background: var(--color-marron);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nosotros</h1>
+        </div>
+    </header>
+
+    <section class="section-nosotros">
+        <h1>¿Quiénes Somos?</h1>
+        <p>Academy es una plataforma educativa dedicada a ofrecer cursos especializados para estudiantes y empresas que buscan crecer en el mundo digital. Nos enfocamos en brindar acceso gratuito a contenido de calidad que potencie el desarrollo de habilidades esenciales para el futuro.</p>
+    </section>
+
+    <section class="section-nosotros">
+        <h1>Nuestros Valores</h1>
+        <div class="valores">
+            <div class="valor">
+                <h3>Innovación</h3>
+                <p>Nos adaptamos a las tendencias tecnológicas y educativas para ofrecer el mejor contenido.</p>
+            </div>
+            <div class="valor">
+                <h3>Calidad</h3>
+                <p>Cada curso está diseñado por expertos para garantizar un aprendizaje efectivo.</p>
+            </div>
+            <div class="valor">
+                <h3>Accesibilidad</h3>
+                <p>Brindamos educación gratuita para que más personas puedan alcanzar sus metas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Academy - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
