@@ -358,6 +358,7 @@ nav ul li a:hover {
 }
 
 .cta__contenido h2 {
+    font-family: var(--fuente-titulos);
     font-size: var(--tamano-titulos);
     font-weight: var(--peso-titulos);
     margin-bottom: 0.5em;
