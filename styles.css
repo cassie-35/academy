@@ -163,6 +163,8 @@ nav ul li a:hover {
     font-size: 1.5rem;
     transition: 0.3s;
     z-index: 100;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+
 }
 
 #btnSubir:hover {
@@ -239,7 +241,7 @@ nav ul li a:hover {
 }
 
 .icon-container {
-    font-size: 6.25rem;
+    font-size: 3.4375rem;
     color: var(--color-blanco);
     margin-bottom: 3.125rem; 
 }
@@ -299,7 +301,12 @@ nav ul li a:hover {
     padding: 1.5em;
     border-radius: 0.5em;
     text-align: center;
+    gap: 3.125rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.curso h3 {
+    margin-bottom: 3.125rem;
 }
 
 .curso img {
@@ -474,7 +481,7 @@ cite {
 .cursos-column h3 {
     font-size: 1.25rem;
     font-weight: var(--peso-subtitulos);
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
 }
 
 .cursos-column a {
@@ -483,6 +490,7 @@ cite {
     text-decoration: none;
     font-size: var(--tamano-parrafos);
     margin: 0.3em 0;
+    margin-top: 1.5rem;
 }
 
 /* Información General */
@@ -505,21 +513,28 @@ cite {
 }
 
 .logo-footer {
-    width: 150px;
+    width: 14rem;
     margin-bottom: 1em;
 }
 
 .info-column h3 {
     font-size: 1.5rem;
     font-weight: var(--peso-subtitulos);
-    margin-bottom: 0.5em;
+    margin-bottom: 2rem;
+}
+
+.info-column p {
+    font-size: var(--tamano-parrafos);
+    font-family: var(--fuente-parrafos);
+    font-weight: var(--peso-parrafos);
+    margin-bottom: 2rem;
 }
 
 .info-column a {
     display: block;
     color: var(--color-blanco);
     text-decoration: none;
-    margin: 0.3em 0;
+    margin: 0.5em 0;
 }
 
 /* Redes sociales */
@@ -527,22 +542,22 @@ cite {
     display: flex;
     justify-content: center;
     gap: 1.5em;  
-    margin-top: 1em;
+    margin-top: 2rem;
 }
 
 .redes-sociales a {
     text-align: center;
 }
 
-.icono-social {
-    font-size: 2rem;
-    color: var(--color-blanco);
+.icono-social img {
+    width: 2rem;
+    height: 2rem;
     transition: transform 0.3s, color 0.3s;
 }
 
-.icono-social:hover {
+.icono-social img:hover {
     transform: scale(1.1);
-    color: var(--color-marron);
+    filter: brightness(0.8);
 }
 
 
