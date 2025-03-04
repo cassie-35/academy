@@ -1,10 +1,6 @@
 window.addEventListener('scroll', function () {
     let btn = document.getElementById('btnSubir');
-    if (window.scrollY > 300) {
-        btn.style.display = 'flex';
-    } else {
-        btn.style.display = 'none';
-    }
+    btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
 });
 
 document.getElementById('btnSubir').addEventListener('click', function () {
@@ -46,17 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
         dot.addEventListener("click", () => {
             clearInterval(autoPlay);
             
-            let diferencia = i - index;
-
-            if (diferencia !== 0) {
-                let pasos = Math.abs(diferencia);
-                let direccion = diferencia > 0 ? 1 : -1;
-
-                let intervalo = setInterval(() => {
-                    moverCarrusel(direccion);
-                    pasos--;
-                    if (pasos === 0) clearInterval(intervalo);
-                }, 600);
+            if (i !== index) {
+                while (index !== i) {
+                    const primerElemento = carrusel.children[0];
+                    carrusel.appendChild(primerElemento);
+                    index = (index + 1) % dots.length;
+                }
+                actualizarIndicadores();
             }
 
             autoPlay = setInterval(() => moverCarrusel(1), 3000);
