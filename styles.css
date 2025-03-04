@@ -10,6 +10,18 @@
     --fuente-parrafos: 'Lato', sans-serif;
     --fuente-botones: 'Montserrat', sans-serif;
     --fuente-menu: 'Poppins', sans-serif;
+
+    --tamano-titulos: 3rem;
+    --tamano-subtitulos: 1.75rem;
+    --tamano-parrafos: 1.125rem;
+    --tamano-botones: 0.875rem;
+    --tamano-menu: 0.875rem;
+    
+    --peso-titulos: bold;
+    --peso-subtitulos: 600;
+    --peso-parrafos: 400;
+    --peso-botones: 700;
+    --peso-menu: 500;
 }
 
 * {
@@ -20,17 +32,20 @@
 
 body {
     font-family: var(--fuente-parrafos);
-    font-size: 1rem;
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
     background: var(--color-blanco);
     color: var(--color-negro);
 }
 
 header {
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background: transparent;
     padding: 1em 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .container {
@@ -53,7 +68,8 @@ nav ul {
 
 nav ul li a {
     font-family: var(--fuente-menu);
-    font-size: 0.875rem;
+    font-size: var(--tamano-menu);
+    font-weight: var(--peso-menu);
     color: var(--color-blanco);
     text-decoration: none;
     transition: 0.3s;
@@ -102,13 +118,13 @@ nav ul li a:hover {
 }
 
 .banner h1 {
-    font-size: 3rem;
+    font-size: var(--tamano-titulos);
     font-family: var(--fuente-titulos);
-    font-weight: bold;
+    font-weight: var(--peso-titulos);
 }
 
 .banner p {
-    font-size: 1.125rem;
+    font-size: var(--tamano-parrafos);
     margin: 1em 0;
     font-family: var(--fuente-parrafos);
 }
@@ -119,9 +135,9 @@ nav ul li a:hover {
     background: var(--color-azul);
     color: var(--color-blanco);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--tamano-botones);
     font-family: var(--fuente-botones);
-    font-weight: bold;
+    font-weight: var(--peso-botones);
     border-radius: 0.5em;
     transition: 0.3s;
 }
@@ -153,6 +169,167 @@ nav ul li a:hover {
     background: var(--color-marron);
 }
 
+.info-section {
+    height: 31.125rem;
+    background: var(--color-blanco);
+    color: var(--color-negro);
+    text-align: center;
+    padding: 4em 2em;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 75px; 
+}
+
+.info-section h2 {
+    font-size: var(--tamano-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    font-weight: var(--peso-subtitulos);
+    max-width: 56.25rem;
+    margin: 0;
+}
+
+.info-section p {
+    font-size: var(--tamano-parrafos);
+    font-family: var(--fuente-subtitulos);
+    max-width: 50rem;
+    margin: 0;
+}
+
+.benefits {
+    text-align: center;
+    padding: 4em 2em;
+    background: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.benefits h2 {
+    font-size: var(--tamano-titulos);
+    font-family: var(--fuente-titulos);
+    font-weight: var(--peso-titulos);
+    margin-bottom: 3.125rem;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);  
+    gap: 3.125rem;
+    max-width: 56.25rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit {
+    width: 34.375rem;
+    height: 23rem;
+    background: var(--color-marron);
+    color: var(--color-blanco);
+    padding: 2em;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    font-size: 6.25rem;
+    color: var(--color-blanco);
+    margin-bottom: 3.125rem; 
+}
+
+.benefit h3 {
+    font-size: var(--tamano-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    font-weight: var(--peso-subtitulos);
+    margin-bottom: 2.5rem; 
+}
+
+.benefit p {
+    width: 27.75rem;
+    font-size: var(--tamano-parrafos);
+    font-family: var(--fuente-parrafos);
+}
+
+.cursos-populares {
+    text-align: center;
+    padding: 6em 4em;
+    background: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.cursos-populares h2 {
+    font-size: 2.5rem;
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.cursos-populares p {
+    font-size: 1.25rem;
+    font-family: var(--fuente-parrafos);
+    margin-bottom: 2em;
+}
+
+.carrusel-container {
+    width: 1513px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.carrusel {
+    padding: 1.5em;
+    display: flex;
+    gap: 0.6em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.curso {
+    flex: 0 0 33.33%; 
+    background: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.curso img {
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Navegación */
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: var(--color-marron);
+}
+
+/* Móvil */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -164,4 +341,9 @@ nav ul li a:hover {
         gap: 1em;
         margin-top: 1em;
     }
+
+    .benefits-container {
+        grid-template-columns: 1fr; 
+    }
+
 }
