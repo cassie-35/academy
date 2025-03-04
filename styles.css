@@ -460,20 +460,4 @@ cite {
         align-items: center;
     }
 
-    .carrusel-container {
-        width: 100%;
-    }
-
-    .carrusel {
-        gap: 0; 
-    }
-
-    .curso {
-        flex: 0 0 100%; 
-    }
-
-    .curso img {
-        width: 100%;
-        height: auto;
-    }
 }

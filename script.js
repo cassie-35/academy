@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         carrusel.style.transition = "transform 0.5s ease-in-out";
         carrusel.style.transform = `translateX(-${direccion * 33.33}%)`;
-
-/*        carrusel.style.transform = translateX(-${direccion * 33.33}%);*/
-
+        
         setTimeout(() => {
             carrusel.style.transition = "none";
             if (direccion === 1) {
