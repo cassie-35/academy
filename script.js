@@ -14,9 +14,8 @@ document.getElementById('btnSubir').addEventListener('click', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const carrusel = document.querySelector(".carrusel");
     const dots = document.querySelectorAll(".dot");
-
     let index = 0;
-    let autoPlay = setInterval(moverCarrusel, 3000); // Auto-slide cada 3s
+    let autoPlay = setInterval(() => moverCarrusel(1), 3000);
 
     function actualizarIndicadores() {
         dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
@@ -43,29 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     }
 
-    nextBtn.addEventListener("click", () => {
-        clearInterval(autoPlay);
-        moverCarrusel(1);
-        autoPlay = setInterval(moverCarrusel, 3000);
-    });
-
-    prevBtn.addEventListener("click", () => {
-        clearInterval(autoPlay);
-        moverCarrusel(-1);
-        autoPlay = setInterval(moverCarrusel, 3000);
-    });
-
     dots.forEach((dot, i) => {
         dot.addEventListener("click", () => {
             clearInterval(autoPlay);
             
             let diferencia = i - index;
-            
+
             if (diferencia !== 0) {
-                moverCarrusel(diferencia);
+                let pasos = Math.abs(diferencia);
+                let direccion = diferencia > 0 ? 1 : -1;
+
+                let intervalo = setInterval(() => {
+                    moverCarrusel(direccion);
+                    pasos--;
+                    if (pasos === 0) clearInterval(intervalo);
+                }, 600);
             }
-            
-            autoPlay = setInterval(moverCarrusel, 3000);
+
+            autoPlay = setInterval(() => moverCarrusel(1), 3000);
         });
     });
 
