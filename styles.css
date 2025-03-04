@@ -169,6 +169,7 @@ nav ul li a:hover {
     background: var(--color-marron);
 }
 
+/* Texto */
 .info-section {
     height: 31.125rem;
     background: var(--color-blanco);
@@ -197,6 +198,7 @@ nav ul li a:hover {
     margin: 0;
 }
 
+/* Beneficios */
 .benefits {
     text-align: center;
     padding: 4em 2em;
@@ -255,6 +257,7 @@ nav ul li a:hover {
     font-family: var(--fuente-parrafos);
 }
 
+/* Cursos Populares*/
 .cursos-populares {
     text-align: center;
     padding: 6em 4em;
@@ -328,7 +331,7 @@ nav ul li a:hover {
     background: var(--color-marron);
 }
 
-
+/* CTA */
 .cta {
     width: 100%;
 }
@@ -382,7 +385,7 @@ nav ul li a:hover {
     color: var(--color-blanco);
 }
 
-
+/* Testimonios */
 .testimonios {
     background: #F8F9FA;
     padding: 3em 1em;
@@ -436,6 +439,121 @@ cite {
     margin-top: 0.5em;
 }
 
+/* Cursos */
+.footer {
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    font-family: var(--fuente-parrafos);
+}
+
+/* Cursos */
+.footer-cursos {
+    padding: 3em 2em;
+}
+
+.footer-cursos h2 {
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-titulos);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cursos-column {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.cursos-column h3 {
+    font-size: 1.25rem;
+    font-weight: var(--peso-subtitulos);
+    margin-bottom: 0.5em;
+}
+
+.cursos-column a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: var(--tamano-parrafos);
+    margin: 0.3em 0;
+}
+
+/* Información General */
+.footer-info {
+    padding: 3em 2em;
+    background: var(--color-azul);
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.info-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo-footer {
+    width: 150px;
+    margin-bottom: 1em;
+}
+
+.info-column h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-subtitulos);
+    margin-bottom: 0.5em;
+}
+
+.info-column a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 0.3em 0;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;  
+    margin-top: 1em;
+}
+
+.redes-sociales a {
+    text-align: center;
+}
+
+.icono-social {
+    font-size: 2rem;
+    color: var(--color-blanco);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icono-social:hover {
+    transform: scale(1.1);
+    color: var(--color-marron);
+}
+
+
+/* Derechos Reservados */
+.footer-derechos {
+    background: #01123C;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1rem;
+}
+
 
 /* Móvil */
 
@@ -458,6 +576,19 @@ cite {
     .contenedor-testimonios {
         flex-direction: column;
         align-items: center;
+    }
+
+    .cursos-container, .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-column {
+        text-align: center;
+    }
+
+    .redes-sociales img {
+        margin: 0 0.5em;
     }
 
 }
