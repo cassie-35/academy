@@ -68,7 +68,9 @@
         <h2>Contáctanos</h2>
         <p>Déjanos tu mensaje y te responderemos lo antes posible.</p>
     
-        <form action="#" method="post">
+        <form name="contacto" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contacto">
+
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
