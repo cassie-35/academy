@@ -546,14 +546,11 @@ cite {
     margin-top: 2rem;
 }
 
-.redes-sociales a {
-    text-align: center;
-}
-
 .icono-social img {
     width: 2rem;
     height: 2rem;
     transition: transform 0.3s, color 0.3s;
+    z-index: 1;
 }
 
 .icono-social img:hover {
