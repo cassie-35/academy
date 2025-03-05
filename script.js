@@ -1,3 +1,4 @@
+/* Botón para subir */
 window.addEventListener('scroll', function () {
     let btn = document.getElementById('btnSubir');
     btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
@@ -7,6 +8,7 @@ document.getElementById('btnSubir').addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+/* Carrusel de cursos */
 document.addEventListener("DOMContentLoaded", function () {
     const carrusel = document.querySelector(".carrusel");
     const dots = document.querySelectorAll(".dot");
@@ -56,4 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     actualizarIndicadores();
+});
+
+/* Animación */
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    function cambiarSlide() {
+        slides[index].style.opacity = "0"; 
+        index = (index + 1) % slides.length; 
+        slides[index].style.opacity = "1"; 
+    }
+
+    setInterval(cambiarSlide, 3000); 
 });
