@@ -260,7 +260,7 @@ nav ul li a:hover {
     font-family: var(--fuente-parrafos);
 }
 
-/* Cursos Populares*/
+/* Cursos populares*/
 .cursos-populares {
     text-align: center;
     padding: 6em 4em;
@@ -447,7 +447,7 @@ cite {
     margin-top: 0.5em;
 }
 
-/* Cursos */
+/* Footer */
 .footer {
     background: var(--color-azul);
     color: var(--color-blanco);
@@ -494,7 +494,7 @@ cite {
     margin-top: 1.5rem;
 }
 
-/* Información General */
+/* Información general */
 .footer-info {
     padding: 3em 2em;
     background: var(--color-azul);
@@ -561,7 +561,7 @@ cite {
     filter: brightness(0.8);
 }
 
-/* Derechos Reservados */
+/* Derechos reservados */
 .footer-derechos {
     background: #01123C;
     text-align: center;
@@ -633,7 +633,6 @@ cite {
 }
 
 /* Móvil */
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
