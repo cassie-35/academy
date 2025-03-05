@@ -545,6 +545,7 @@ cite {
     gap: 1.5em;  
     margin-top: 2rem;
     border: 2px solid red;
+    z-index: 10;
 }
 
 .icono-social img {
