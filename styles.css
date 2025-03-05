@@ -539,12 +539,10 @@ cite {
 }
 
 /* Redes sociales */
-.redes-sociales {
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;  
-    margin-top: 2rem;
-    z-index: 10;
+.icono-social {    
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0.75rem; 
 }
 
 .icono-social img {
