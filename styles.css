@@ -194,13 +194,6 @@ nav ul li a:hover {
     margin: 0;
 }
 
-.info-section p {
-    font-size: var(--tamano-parrafos);
-    font-family: var(--fuente-subtitulos);
-    max-width: 50rem;
-    margin: 0;
-}
-
 /* Beneficios */
 .benefits {
     text-align: center;
@@ -269,15 +262,17 @@ nav ul li a:hover {
 }
 
 .cursos-populares h2 {
-    font-size: 2.5rem;
+    font-size: var(--tamano-titulos);
     font-family: var(--fuente-titulos);
     font-weight: bold;
+    color: var(--color-azul);
     margin-bottom: 0.5em;
 }
 
 .cursos-populares p {
-    font-size: 1.25rem;
-    font-family: var(--fuente-parrafos);
+    font-size: var(--tamano-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    font-weight: var(--peso-subtitulos);
     margin-bottom: 2em;
 }
 
@@ -308,6 +303,18 @@ nav ul li a:hover {
 
 .curso h3 {
     margin-bottom: 3.125rem;
+}
+
+.curso p {
+    font-size: var(--tamano-parrafos);
+    font-family: var(--fuente-parrafos);
+    font-weight: var(--peso-parrafos);
+}
+
+.curso a {
+    font-size: var(--tamano-botones);
+    font-family: var(--fuente-botones);
+    font-weight: var(--peso-botones);
 }
 
 .curso img {
@@ -417,11 +424,11 @@ nav ul li a:hover {
 }
 
 .testimonio {
-    background: var(--color-blanco);
+    background: #F8F9FA;
     padding: 1.5em;
     flex: 1;
     border-radius: 0.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     max-width: 25em;
 }
 
@@ -434,15 +441,18 @@ nav ul li a:hover {
 
 .estrellas {
     font-size: 1.5em;
-    color: var(--color-marron);
+    color: #FFC83D; 
+    -webkit-text-stroke: 0.03em #A48027; 
+    letter-spacing: 0.1em; 
     margin: 0.5em 0;
+    display: inline-block;
 }
 
 cite {
     font-size: var(--tamano-botones);
     font-weight: var(--peso-subtitulos);
     font-family: var(--fuente-subtitulos);
-    color: var(--color-celeste);
+    color: var(--color-azul);
     display: block;
     margin-top: 0.5em;
 }
@@ -666,5 +676,4 @@ cite {
     .redes-sociales img {
         margin: 0 0.5em;
     }
-
 }
