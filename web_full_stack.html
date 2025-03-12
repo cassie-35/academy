@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy - Aprende Gratis</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600;700&family=Lato:wght@400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,15 +41,18 @@
 
     <section class="banner">
         <div class="banner-content">
-            <h1>DESARROLLO WEB FULL STACK</h1>
-            
-            <div class="container">
-                
-                <p class="descripcion">Descripción: <br>El curso de Desarrollo Web Full Stack está diseñado para brindarte una comprensión integral del desarrollo web desde cero, abarcando tanto el desarrollo frontend como el backend. Aprenderás cómo crear sitios web modernos, dinámicos y funcionales, utilizando tecnologías clave como HTML, CSS y JavaScript para el lado del cliente, y Node.js o Python para el lado del servidor. También te sumergirás en el manejo de bases de datos, la creación de APIs, y la integración de servicios de autenticación y seguridad. A lo largo del curso, desarrollarás un proyecto completo que te permitirá aplicar tus conocimientos en un entorno real. Este curso es ideal tanto para principiantes como para aquellos con conocimientos previos que deseen profundizar en el desarrollo Full Stack.</p>
-          
-            </div>
-            
            
+
+        <section class="curso-python">
+            <div class="curso-contenido">
+                <h1>DESARROLLO WEB FULL STACK</h1>
+                <p >Descripción:</p>
+                <p>
+                    El curso de Desarrollo Web Full Stack está diseñado para brindarte una comprensión integral del desarrollo web desde cero, abarcando tanto el desarrollo frontend como el backend. Aprenderás cómo crear sitios web modernos, dinámicos y funcionales, utilizando tecnologías clave como HTML, CSS y JavaScript para el lado del cliente, y Node.js o Python para el lado del servidor. También te sumergirás en el manejo de bases de datos, la creación de APIs, y la integración de servicios de autenticación y seguridad. A lo largo del curso, desarrollarás un proyecto completo que te permitirá aplicar tus conocimientos en un entorno real. Este curso es ideal tanto para principiantes como para aquellos con conocimientos previos que deseen profundizar en el desarrollo Full Stack.
+                </p>
+               
+            </div>
+        </section>
         </div>
         
     </section> 
@@ -92,40 +97,48 @@
         <h2>CONTENIDO DEL CURSO</h2>
         <p>El curso se divide en 5 partes principales para facilitar tu aprendizaje y asegurar una comprensión completa de los temas.</p>
     </section>
-        <div class="container">
-            <div class="container">   
-                <div class="contenido-web">
-                    <h3>Parte 1 : Fundamentos del Desarrollo Web</h3><br>
-                  </div>
-                <div class="contenido-web">
-                    <h3>Parte 2 : Interactividad de JavaScript</h3><br>
-               </div>
-                
-                <div class="contenido-web">
-                    <h3>Parte 3 : Backend y Base de Datos</h3><br>
-                </div>
-            </div>  
-        </div> 
-        <div class="container">
-            <div class="container">   
-                <div class="contenido-web">
-                    <h3>Parte 4 : Desarrollo Fronted Moderno</h3><br>
-                  </div>
-                <div class="contenido-web">
-                    <h3>Parte 5 : Proyecto Final y Portafolio</h3><br>
-               </div>
-                
-                <div class="contenido-web">
-                </div>
-            </div>  
-        </div> 
+    <div class="contenedor">
+        <div class="contenido-web" onclick="toggleDetalle(1)">Parte 1 : Fundamentos del Desarrollo Web</div>
+        <div class="detalle" id="detalle1">Tema 1 : Introducción al Desarrollo Web y la arquitectura Full Stack</div>
+        <div class="detalle" id="detalle1">Tema 2 : HTML Semántico y Buenos prácticas</div>
+        <div class="detalle" id="detalle1">Tema 3 : CSS Avanzado y Diseño Responsivo</div>
+        <div class="detalle" id="detalle1">Tema 4 : Uso de Boostrap para estilizar sitios Rápidamente</div>
+        <div class="detalle" id="detalle1">Tema 5 : Proyecto Inicial: Página de Portafolio personal estática.</div>
+    
+        <div class="contenido-web" onclick="toggleDetalle(2)">Parte 2 : Interactividad de JavaScript</div>
+        <div class="detalle" id="detalle2">Tema 6 : Fundamentos de JavaScript (Variables, Funciones y Bucles)</div>
+        <div class="detalle" id="detalle2">Tema 7 : DOM Manipulación y Eventos</div>
+        <div class="detalle" id="detalle2">Tema 8 : AJAX y Fetch para consumo de APIs</div>
+        <div class="detalle" id="detalle2">Tema 9 : Introducción a ES6 y promesas</div>
+        <div class="detalle" id="detalle2">Proyecto : Crear una aplicación de noticias dinámica con APi pública</div>
+    
+        <div class="contenido-web" onclick="toggleDetalle(3)">Parte 3 : Backend y Base de Datos</div>
+        <div class="detalle" id="detalle3">Tema 10 : Introducción a Node.js y Express.js</div>
+        <div class="detalle" id="detalle3">Tema 11 : Creación de rutas y middleware en Express</div>
+        <div class="detalle" id="detalle3">Tema 12 : Conexión con Base de Datos relacionales (MySQL)</div>
+        <div class="detalle" id="detalle3">Tema 13 : Introducción a Bases de Datos NoSql con Mongo DB</div>
+        <div class="detalle" id="detalle3">Tema 14 : Seguridad Básica Manejo de CORS y Autenticación JWT</div>
+    
+        <div class="contenido-web" onclick="toggleDetalle(4)">Parte 4 : Desarrollo Frontend Moderno</div>
+        <div class="detalle" id="detalle4">Tema 15 : Fundamentos de React: Componentes y Props</div>
+        <div class="detalle" id="detalle4">Tema 16 : Manejo de Estado en React (useState y useEffect)</div>
+        <div class="detalle" id="detalle4">Tema 17 : Rutas en React SPA (Single Page Applications)</div>
+        <div class="detalle" id="detalle4">Tema 18 : Integración de Backend con React</div>
+        
+    
+        <div class="contenido-web" onclick="toggleDetalle(5)">Parte 5 : Proyecto Final y Portafolio</div>
+        <div class="detalle" id="detalle5">Tema 19 : Diseño y Desarrollo de un proyecto Full Stack Completo</div>
+        <div class="detalle" id="detalle5">Tema 20 : Buenas Prácticas para documentación y Códogp limpio</div>
+        <div class="detalle" id="detalle5">Tema 21 : Presentación del Portafolio y Creación de un Cv Técnico atractivo</div>
+        
+    </div>
     </section>
     <section class="cursos-populares">
 
     </section>
         <section class="cursos-populares">
-        <div class="container">
-            <div class="container">   
+        <div class="container1">
+            <div class="container1">   
                 <div class="tutor">
                     <h3>INSTRUCTOR</h3><br>
                     <img src="imagenes/web.jpg">
@@ -261,7 +274,7 @@
 
     <button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
     
-    <script src="script.js"></script>
+    <script src="web.js"></script>
 
 </body>
 </html>

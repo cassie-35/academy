@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy - Aprende Gratis</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="python.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600;700&family=Lato:wght@400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,13 +41,20 @@
 
     <section class="banner">
         <div class="banner-content">
-            <h1>PYTHON PARA PRINCIPIANTES</h1>
+            <section class="curso-python">
+                <div class="curso-contenido">
+                    <h1>PYTHON PARA PRINCIPIANTES</h1>
+                    <p >Descripción:</p>
+                    <p>
+                        En este curso, te sumergirás en el mundo de la programación con Python, uno de los lenguajes de programación 
+                        más populares y versátiles. Aprenderás desde los fundamentos básicos hasta conceptos intermedios que te 
+                        permitirán desarrollar programas sencillos y funcionales. Python es conocido por su sintaxis clara y su enfoque en la legibilidad, lo que lo convierte en una excelente opción para principiantes. A lo largo del curso, te guiaré paso a paso con ejemplos prácticos, ejercicios y proyectos que consolidarán tus habilidades.Este curso está diseñado para que puedas desarrollar una sólida base en programación y te sientas listo para avanzar hacia proyectos más desafiantes o temas avanzados como ciencia de datos, desarrollo web o inteligencia artificial.
+                  
+                  
+                  
+                </div>
+            </section>
             
-            <div class="container">
-                
-                <p class="descripcion">Descripción: <br>En este curso, te sumergirás en el mundo de la programación con Python, uno de los lenguajes de programación más populares y versátiles. Aprenderás desde los fundamentos básicos hasta conceptos intermedios que te permitirán desarrollar programas sencillos y funcionales. Python es conocido por su sintaxis clara y su enfoque en la legibilidad, lo que lo convierte en una excelente opción para principiantes. A lo largo del curso, te guiaré paso a paso con ejemplos prácticos, ejercicios y proyectos que consolidarán tus habilidades. Este curso está diseñado para que puedas desarrollar una sólida base en programación y te sientas listo para avanzar hacia proyectos más desafiantes o temas avanzados como ciencia de datos, desarrollo web o inteligencia artificial.</p>
-          
-            </div>
             
            
         </div>
@@ -63,18 +72,20 @@
                             <li>Cómo manejar variables y tipos de datos en Python.</li>
                             <li>Estructuras condicionales: if, else y elif.</li>
                             <li>Bucles y control de flujo (for, while).</li>
-                            <li>Listas, tuplas y diccionarios.</li>
                             <li>Funciones: definición, parámetros y retorno de valores.</li>
+                            <li>Desarrollar aplicaciones web dinámicas con frameworks como React o Vue.js.</li>
+                            
                         </ul>
                     </div>
                     <div class="aprender">
                         <ul>
                             <li>Manejo de errores y excepciones en Python.</li>
                             <li>Cómo manejar variables y tipos de datos en Python.</li>
+                            <li>Desplegar aplicaciones web en plataformas como Heroku o AWS.</li>
                             <li>Manipulación de archivos y operaciones de entrada/salida.</li>
-                            <li>Módulos y bibliotecas en Python.</li>
                             <li>Introducción a la programación orientada a objetos (POO).</li>
                             <li>Funciones: definición, parámetros y retorno de valores.</li>
+                            
                         </ul>
                     </div>
                     
@@ -92,40 +103,53 @@
         <h2>CONTENIDO DEL CURSO</h2>
         <p>El curso se divide en 5 partes principales para facilitar tu aprendizaje y asegurar una comprensión completa de los temas.</p>
     </section>
-        <div class="container">
-            <div class="container">   
-                <div class="contenido">
-                    <h3>Parte 1 : Introducción y Conceptos Básicos</h3><br>
-                  </div>
-                <div class="contenido">
-                    <h3>Parte 2 : Control de Flujo y Condicionales</h3><br>
-               </div>
-                
-                <div class="contenido">
-                    <h3>Parte 3 : Estructuras de Datos y Manipulación</h3><br>
-                </div>
-            </div>  
-        </div> 
-        <div class="container">
-            <div class="container">   
-                <div class="contenido">
-                    <h3>Parte 4 : Funciones y Manejo de Errores</h3><br>
-                  </div>
-                <div class="contenido">
-                    <h3>Parte 5 : Módulos, Archivos y POO Básica</h3><br>
-               </div>
-                
-                <div class="contenido">
-                </div>
-            </div>  
-        </div> 
+    <div class="contenedor">
+        <div class="contenido-web" onclick="toggleDetalle(1)">Parte 1 : Fundamentos del Desarrollo Web</div>
+        <div class="detalle" id="detalle1">Tema 1 : ¿Que es Python y porque es importante?</div>
+        <div class="detalle" id="detalle1">Tema 2 : Instalación de Python y configuración del entorno</div>
+        <div class="detalle" id="detalle1">Tema 3 : Sintaxis Basica y primer programa</div>
+        <div class="detalle" id="detalle1">Tema 4 : Variables y Tipos de Datos</div>
+        <div class="detalle" id="detalle1">Tema 5 : Operaciones matemáticas y de comparación</div>
+        <div class="detalle" id="detalle1">Ejercicio práctico : Crear un programa simple de suma de dos números.</div>
+
+
+        
+
+        <div class="contenido-web" onclick="toggleDetalle(2)">Parte 2 : Control de Flujo y Condicionales</div>
+        <div class="detalle" id="detalle2">Tema 6 : Estructuras Codicionales (if, else, elif)</div>
+        <div class="detalle" id="detalle2">Tema 7 : Bucles for y while</div>
+        <div class="detalle" id="detalle2">Tema 8 : Control de bucles (break, continue, pass)</div>
+        <div class="detalle" id="detalle2">Proyecto práctico : Crear un juego de adivinanza de números.</div>
+    
+        <div class="contenido-web" onclick="toggleDetalle(3)">Parte 3 : Estructuras de Datos y Manipulación</div>
+        <div class="detalle" id="detalle3">Tema 9 : Listas y sus Operaciones</div>
+        <div class="detalle" id="detalle3">Tema 10 : Tuplas y Diferencias con Listas.</div>
+        <div class="detalle" id="detalle3">Tema 11 : Diccionarios Creaciíon y uso.</div>
+        <div class="detalle" id="detalle3">Tema 12 : Métodos útiles para listas, tuplas y diccionarios</div>
+        <div class="detalle" id="detalle3">Ejercicio : Crear un sistema de inventario básico utilizando diccionarios.</div>
+
+    
+        <div class="contenido-web" onclick="toggleDetalle(4)">Parte 4 : Funciones y Manejo de Errores</div>
+        <div class="detalle" id="detalle4">Tema 13 : Creación de Funciones</div>
+        <div class="detalle" id="detalle4">Tema 14 : Parámetros, argumentos y valores de retorno.</div>
+        <div class="detalle" id="detalle4">Tema 15 : Funciones anónimas (Lamdba)</div>
+        <div class="detalle" id="detalle4">Tema 16 : Manejo de Errores y Excepciones</div>
+        <div class="detalle" id="detalle4">Proyecto : Desarrollar una calculadora básico con manejo de errores.</div>
+    
+        <div class="contenido-web" onclick="toggleDetalle(5)">Parte 5 : Módulos, Archivos y POO Básica</div>
+        <div class="detalle" id="detalle5">Tema 17 : Módulos Importación y uso de librerias</div>
+        <div class="detalle" id="detalle5">Tema 18 : Manipulación de archivos leer y Escribir archivos</div>
+        <div class="detalle" id="detalle5">Tema 19 : Introducción a la programación orientada a objetos</div>
+        <div class="detalle" id="detalle5">Tema 20 : Clases, Objetos y Métodos Básicos</div>
+        <div class="detalle" id="detalle5">Final : Crear una aplicación de gestión de tareas usando clases y archivos.</div>
+    </div>
     </section>
     <section class="cursos-populares">
 
     </section>
         <section class="cursos-populares">
-        <div class="container">
-            <div class="container">   
+        <div class="container1">
+            <div class="container1">   
                 <div class="tutor">
                     <h3>INSTRUCTOR</h3><br>
                     <img src="imagenes/python.jpg">
@@ -261,7 +285,7 @@
 
     <button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
     
-    <script src="script.js"></script>
+    <script src="web.js"></script>
 
 </body>
 </html>

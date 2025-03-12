@@ -1,0 +1,361 @@
+:root {
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-azul: #01164D;
+    --color-celeste: #297FB6;
+    --color-marron: #956C3E;
+
+    --fuente-titulos: 'Oswald', sans-serif;
+    --fuente-subtitulos: 'Montserrat', sans-serif;
+    --fuente-parrafos: 'Lato', sans-serif;
+    --fuente-botones: 'Montserrat', sans-serif;
+    --fuente-menu: 'Poppins', sans-serif;
+
+    --tamano-titulos: 3rem;
+    --tamano-subtitulos: 1.75rem;
+    --tamano-parrafos: 1.125rem;
+    --tamano-botones: 0.875rem;
+    --tamano-menu: 0.875rem;
+    
+    --peso-titulos: bold;
+    --peso-subtitulos: 600;
+    --peso-parrafos: 400;
+    --peso-botones: 700;
+    --peso-menu: 500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    background: url('/academy-main/imagenes/sql.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: justify;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+}
+.info-box {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.dropdown {
+    width: 80%;
+    margin: auto;
+}
+.dropdown button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 16px;
+}
+.dropdown-content {
+    text-align: left;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #f1f1f1;
+}
+/* Instructor */
+.instructor {
+    max-width: 800px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.instructor img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* Comentarios */
+.comments {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.comments h2 {
+    text-align: center;
+}
+
+.comment {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+/* Footer */
+.footer {
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    font-family: var(--fuente-parrafos);
+}
+
+/* Cursos */
+.footer-cursos {
+    padding: 3em 2em;
+}
+
+.footer-cursos h2 {
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-titulos);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cursos-column {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.cursos-column h3 {
+    font-size: 1.25rem;
+    font-weight: var(--peso-subtitulos);
+    margin-bottom: 2em;
+}
+
+.cursos-column a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: var(--tamano-parrafos);
+    margin: 0.3em 0;
+    margin-top: 1.5rem;
+}
+
+/* Información general */
+.footer-info {
+    padding: 3em 2em;
+    background: var(--color-azul);
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.info-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo-footer {
+    width: 14rem;
+    margin-bottom: 1em;
+}
+
+.info-column h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-subtitulos);
+    margin-bottom: 2rem;
+}
+
+.info-column p {
+    font-size: var(--tamano-parrafos);
+    font-family: var(--fuente-parrafos);
+    font-weight: var(--peso-parrafos);
+    margin-bottom: 2rem;
+}
+
+.info-column a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 0.5em 0;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;  
+    margin-top: 2rem;
+}
+
+.redes-sociales a {
+    text-align: center;
+}
+
+.icono-social img {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icono-social img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* Derechos reservados */
+.footer-derechos {
+    background: #01123C;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1rem;
+}
+
+/* Animación */
+.slider-container {
+    width: 100%;
+    height: 541px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    padding: 0 7.5rem;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.texto {
+    width: 40rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-negro);
+    font-family: var(--fuente-parrafos);
+}
+
+.texto h2 {
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-subtitulos);
+}
+
+.texto p {
+    font-size: var(--tamano-parrafos);
+}
+
+.slide:first-child {
+    opacity: 1;
+}
+
+#slide-dos {
+    background: var(--color-azul);
+}
+
+#slide-dos h2 {
+    color: var(--color-blanco);
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .contenedor-testimonios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cursos-container, .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-column {
+        text-align: center;
+    }
+
+    .redes-sociales img {
+        margin: 0 0.5em;
+    }
+}
+@media (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+
+    .instructor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instructor img {
+        width: 100px;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Ciberseguridad</title>
+    <link rel="stylesheet" href="ciberseguridad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600;700&family=Lato:wght@400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-h">
+            <a href="index.html">
+                <img src="imagenes/logo-blanco.png" alt="Academy Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/academy._learn/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/51950689401" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Curso: Introducción a la Ciberseguridad</h1>
+            <p>El curso de Introducción a la Ciberseguridad te proporcionará una comprensión fundamental sobre cómo proteger información, redes y sistemas frente a amenazas digitales. A medida que las amenazas cibernéticas crecen en frecuencia y complejidad, la demanda de profesionales capacitados en ciberseguridad ha aumentado significativamente. Aprenderás los conceptos básicos sobre seguridad informática, amenazas comunes (como malware, ransomware y phishing), y estrategias esenciales para la defensa proactiva y reactiva. Además, entenderás las mejores prácticas en seguridad de datos, encriptación y gestión de incidentes. Este curso es ideal para principiantes que buscan explorar una carrera en ciberseguridad o cualquier persona interesada en mejorar sus conocimientos sobre seguridad digital.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>¿Qué aprenderás?</h2>
+        <div class="info-box">
+            <ul>
+                <li>Identificar las amenazas y vulnerabilidades cibernéticas más comunes.</li>
+                <li>Entender los principios básicos de seguridad informática.</li>
+                <li>Cómo prevenir y mitigar ataques de phishing y ransomware.</li>
+                <li>Técnicas de autenticación y autorización seguras.</li>
+                <li>Análisis de riesgos de seguridad.</li>
+            </ul>
+            <ul>
+                <li>Conceptos básicos de criptografía y encriptación de datos.</li>
+                <li>Implementación de cortafuegos (firewalls) y protección de redes</li>
+                <li>Gestión de incidentes y respuesta ante amenazas cibernéticas.</li>
+                <li>Seguridad en dispositivos móviles y sistemas IoT.</li>
+                <li>Normativas y estándares de ciberseguridad internacionales.</li>
+            </ul>
+        </div>
+        <h2>Contenido del Curso</h2>
+        <p>El curso se divide en 5 partes principales para facilitar tu aprendizaje.</p>
+        
+        <div class="dropdown">
+            <button onclick="toggleDropdown('part1')">Parte 1: Fundamentos de la Ciberseguridad</button>
+            <div id="part1" class="dropdown-content">Tema 1: Introducción a la Ciberseguridad y su Importancia<br>
+                Tema 2: Amenazas y Vulnerabilidades Comunes<br>
+                Tema 3: Conceptos Clave de Seguridad (Confidencialidad, Integridad y Disponibilidad)<br>
+                Tema 4: Historia y Evolución de las Amenazas Cibernéticas<br>
+                Tema 5: Proyecto: Crear un diagrama de ataque y defensa cibernética.</div>
+            
+            <button onclick="toggleDropdown('part2')">Parte 2: Amenazas y Protección Básica</button>
+            <div id="part2" class="dropdown-content">Tema 6: Malware: Tipos y Métodos de Propagación<br>
+                Tema 7: Ransomware y Técnicas de Defensa<br>
+                Tema 8: Ataques de Phishing y Spoofing: Cómo Identificarlos y Prevenirlos<br>
+                Tema 9: Seguridad en Navegadores y Medios Sociales<br>
+                Tema 10: Práctica: Implementar medidas básicas de protección en una red local.<br>
+                </div>
+            
+            <button onclick="toggleDropdown('part3')">Parte 3: Seguridad de Redes y Gestión de Accesos</button>
+            <div id="part3" class="dropdown-content">Tema 11: Principios Básicos de Seguridad en Redes<br>
+                Tema 12: Cortafuegos (Firewalls) y su Configuración Básica<br>
+                Tema 13: Sistemas de Detección de Intrusos (IDS) y Prevención de Intrusos (IPS)<br>
+                Tema 14: Gestión de Identidad y Control de Acceso<br>
+                Tema 15: Proyecto: Configurar una red simulada con medidas de seguridad básicas.</div>
+            
+            <button onclick="toggleDropdown('part4')">Parte 4: Criptografía y Protección de Datos</button>
+            <div id="part4" class="dropdown-content">Tema 16: Conceptos Básicos de Criptografía y Encriptación de Datos<br>
+                Tema 17: Protocolos Seguros: HTTPS, SSL/TLS y VPN<br>
+                Tema 18: Cómo Proteger Información Personal y Corporativa<br>
+                Tema 19: Cifrado de Archivos y Mensajes en Herramientas Cotidianas<br>
+                Tema 20: Práctica: Implementar un certificado SSL/TLS en un sitio web simulado.</div>
+            
+            <button onclick="toggleDropdown('part5')">Parte 5: Normativas y Respuesta ante Incidentes</button>
+            <div id="part5" class="dropdown-content">Tema 21: Introducción a la Gestión de Incidentes de Seguridad<br>
+                Tema 22: Metodologías para la Respuesta ante Incidentes<br>
+                Tema 23: Seguridad en Sistemas Móviles e IoT<br>
+                Tema 24: Normativas y Estándares de Ciberseguridad (ISO 27001, GDPR, NIST)<br>
+                Tema 25: Proyecto Final: Crear un plan básico de respuesta ante incidentes cibernéticos.</div>
+        </div>
+    </div>
+<!-- Instructor -->
+<section class="instructor">
+    <img src="imagenes/valeriamendoza.jpg" alt="Instructor">
+    <div>
+        <h2>Instructor:</h2>
+        <p><strong>Valeria Mendoza</strong> – Especialista en Seguridad y Desarrollo Frontend</p>
+        <p>Soy Valeria, ingeniera en sistemas y experta en ciberseguridad y desarrollo frontend. Me apasiona crear experiencias digitales seguras y funcionales, y compartir mi conocimiento con quienes desean adentrarse en este mundo. Con más de 6 años en el sector, quiero ayudarte a potenciar tus habilidades y destacar en el campo del desarrollo tecnológico.</p>
+    </div>
+</section>
+
+<!-- Comentarios -->
+<section class="comments">
+    <h2>Comentarios:</h2>
+    <div class="comment">⭐⭐⭐⭐⭐ ""Excelente introducción a la ciberseguridad. Todo está explicado de manera muy clara y fácil de entender.""</div>
+    <div class="comment">⭐⭐⭐⭐⭐ "Un curso bien estructurado que cubre todos los conceptos básicos. Lo recomiendo a cualquier persona interesada en este campo."</div>
+</section>
+
+<footer class="footer">
+    <!-- Cursos -->
+    <section class="footer-cursos">
+        <h2>Aprende con nuestros expertos</h2>
+        <div class="cursos-container">
+            <div class="cursos-column">
+                <h3>Instructor Diego Ramírez</h3>
+                <a href="#">Python para Principiantes</a>
+                <a href="#">Machine Learning con Python</a>
+                <a href="#">Diseño UX/UI: De Principiante a Profesional</a>
+                <a href="#">SQL para Analistas de Datos</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructor Martín López</h3>
+                <a href="#">Desarrollo Web Full Stack</a>
+                <a href="#">Desarrollo de Aplicaciones con React</a>
+                <a href="#">Computación en la Nube con AWS</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructora Valeria Mendoza</h3>
+                <a href="#">Introducción a la Ciberseguridad</a>
+                <a href="#">Java: De 0 a Experto</a>
+                <a href="#">Frontend Avanzado con React</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información general -->
+    <section class="footer-info">
+        <div class="info-container">
+            <!-- Logo -->
+            <div class="info-column">
+                <a href="index.html">
+                    <img src="imagenes/logo-cdr-blanco.png" alt="Logo Academy" class="logo-footer">
+                </a>
+                <p>Accede a cursos de calidad, gratuitos y diseñados por expertos para impulsar tu aprendizaje.</p>
+            </div>
+
+            <!-- Páginas -->
+            <div class="info-column">
+                <h3>Páginas</h3>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <!-- Contacto y redes sociales -->
+            <div class="info-column">
+                <h3>Contáctanos</h3>
+                <p>Nos encontramos disponibles en línea, contáctanos desde cualquier parte del mundo.</p>
+                <a href="mailto:contactanos.academy@gmail.com">contactanos.academy@gmail.com</a>
+                <a href="https://wa.me/51950689401">+51 950 689 401</a>
+                <section class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank" class="icono-social">
+                        <img src="imagenes/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/academy._learn/" target="_blank" class="icono-social">
+                        <img src="imagenes/instagram.png" alt="Instagram">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Derechos reservados -->
+    <section class="footer-derechos">
+        <p>© 2024 Academy. Todos los derechos reservados.</p>
+    </section>
+</footer>
+
+<button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

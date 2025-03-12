@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Desarrollo de Aplicaciones con React</title>
+    <link rel="stylesheet" href="appreact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600;700&family=Lato:wght@400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-h">
+            <a href="index.html">
+                <img src="imagenes/logo-blanco.png" alt="Academy Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/academy._learn/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/51950689401" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Curso: Desarrollo de Aplicaciones con React</h1>
+            <p>El curso de Desarrollo de Aplicaciones con React está diseñado para ayudarte a dominar una de las bibliotecas de JavaScript más populares para el desarrollo de interfaces de usuario. Aprenderás desde los fundamentos básicos de React hasta la construcción de aplicaciones dinámicas y avanzadas. Te sumergirás en la creación de componentes reutilizables, la gestión del estado con hooks, la navegación entre páginas y la integración de APIs externas. Además, se abordarán las mejores prácticas de desarrollo, incluyendo testing y optimización de rendimiento. Este curso es ideal para cualquier persona que quiera crear aplicaciones web modernas y escalables utilizando React.
+
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>¿Qué aprenderás?</h2>
+        <div class="info-box">
+            <ul>
+                <li>Conceptos fundamentales de React y su ecosistema.</li>
+                <li>Creación y gestión de componentes funcionales y de clase.</li>
+                <li>Manejo de eventos y gestión del estado con hooks (useState y useEffect).</li>
+                <li>Implementación de enrutamiento dinámico con React Router.</li>
+                <li>Estilización de componentes con CSS, Tailwind y Styled Components.</li>
+            </ul>
+            <ul>
+                <li>Comunicación entre componentes mediante props y contextos.</li>
+                <li>Consumo de APIs REST utilizando Fetch y Axios.</li>
+                <li>Manejo avanzado del estado global con Redux.</li>
+                <li>Testing de aplicaciones con Jest y React Testing Library.</li>
+                <li>Despliegue de aplicaciones React en servicios como Vercel o Netlify.</li>
+            </ul>
+        </div>
+        <h2>Contenido del Curso</h2>
+        <p>El curso se divide en 5 partes principales para facilitar tu aprendizaje.</p>
+        
+        <div class="dropdown">
+            <button onclick="toggleDropdown('part1')">Parte 1: Introducción a React y su Entorno</button>
+            <div id="part1" class="dropdown-content">Tema 1: ¿Qué es React y por qué usarlo?<br>
+                Tema 2: Configuración del entorno de desarrollo con Create React App<br>
+                Tema 3: Primer proyecto: Creación de una aplicación básica con React<br>
+            </div>
+            <button onclick="toggleDropdown('part2')">Parte 2: Fundamentos de React</button>
+            <div id="part2" class="dropdown-content">Tema 4: Componentes funcionales y de clase<br>
+                Tema 5: JSX y su uso para renderizar contenido dinámico<br>
+                Tema 6: Props y la comunicación entre componentes<br>
+                Tema 7: Hooks básicos: useState y useEffect<br>
+                Tema 8: Proyecto: Aplicación de lista de tareas con React.<br>
+                </div>
+            
+            <button onclick="toggleDropdown('part3')">Parte 3: Estilización y Manejo del Estado Global</button>
+            <div id="part3" class="dropdown-content">Tema 9: Estilización de componentes con CSS y Tailwind<br>
+                Tema 10: Introducción a Styled Components<br>
+                Tema 11: Context API para la gestión del estado global<br>
+                Tema 12: Implementación de Redux para aplicaciones complejas<br>
+                Tema 13: Práctica: Construir un blog con estado compartido</div>
+            
+            <button onclick="toggleDropdown('part4')">Parte 4: Navegación y Consumo de APIs</button>
+            <div id="part4" class="dropdown-content">Tema 14: Enrutamiento dinámico con React Router<br>
+                Tema 15: Consumo de APIs REST con Fetch y Axios<br>
+                Tema 16: Manejo de errores y carga de datos asíncronos<br>
+                Tema 17: Proyecto: Aplicación de búsqueda de películas<br>
+            </div>
+            
+            <button onclick="toggleDropdown('part5')">Parte 5: Testing y Optimización</button>
+            <div id="part5" class="dropdown-content">Tema 18: Testing de componentes con Jest y React Testing Library<br>
+                Tema 19: Optimización de rendimiento con React.memo y lazy loading<br>
+                Tema 20: Despliegue de aplicaciones en Vercel y Netlify<br>
+                Tema 21: Proyecto Final: Desarrollar una aplicación de comercio electrónico con React<br>
+            </div>
+        </div>
+    </div>
+<!-- Instructor -->
+<section class="instructor">
+    <img src="imagenes/martinlopez.jpg" alt="Instructor">
+    <div>
+        <h2>Instructor:</h2>
+        <p><strong>Diego Ramirez</strong>  – Experto en Desarrollo web y computación en la nube</p>
+        <p>Soy Diego, apasionado por la programación y el análisis de datos. Con más de 7 años de experiencia en desarrollo de software y machine learning, he trabajado en proyectos innovadores para diversas industrias. Mi objetivo es ayudarte a entender la lógica detrás de cada línea de código y hacer que la programación sea accesible y emocionante para todos."</p>
+    </div>
+</section>
+
+<!-- Comentarios -->
+<section class="comments">
+    <h2>Comentarios:</h2>
+    <div class="comment">⭐⭐⭐⭐⭐ "¡Este curso fue increíble! Aprendí todo lo que necesitaba para construir aplicaciones completas con React."</div>
+    <div class="comment">⭐⭐⭐⭐⭐"Me encantaron los proyectos prácticos. Realmente ayudan a aplicar los conceptos teóricos."</div>
+</section>
+
+<footer class="footer">
+    <!-- Cursos -->
+    <section class="footer-cursos">
+        <h2>Aprende con nuestros expertos</h2>
+        <div class="cursos-container">
+            <div class="cursos-column">
+                <h3>Instructor Diego Ramírez</h3>
+                <a href="#">Python para Principiantes</a>
+                <a href="#">Machine Learning con Python</a>
+                <a href="#">Diseño UX/UI: De Principiante a Profesional</a>
+                <a href="#">SQL para Analistas de Datos</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructor Martín López</h3>
+                <a href="#">Desarrollo Web Full Stack</a>
+                <a href="#">Desarrollo de Aplicaciones con React</a>
+                <a href="#">Computación en la Nube con AWS</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructora Valeria Mendoza</h3>
+                <a href="#">Introducción a la Ciberseguridad</a>
+                <a href="#">Java: De 0 a Experto</a>
+                <a href="#">Frontend Avanzado con React</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información general -->
+    <section class="footer-info">
+        <div class="info-container">
+            <!-- Logo -->
+            <div class="info-column">
+                <a href="index.html">
+                    <img src="imagenes/logo-cdr-blanco.png" alt="Logo Academy" class="logo-footer">
+                </a>
+                <p>Accede a cursos de calidad, gratuitos y diseñados por expertos para impulsar tu aprendizaje.</p>
+            </div>
+
+            <!-- Páginas -->
+            <div class="info-column">
+                <h3>Páginas</h3>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <!-- Contacto y redes sociales -->
+            <div class="info-column">
+                <h3>Contáctanos</h3>
+                <p>Nos encontramos disponibles en línea, contáctanos desde cualquier parte del mundo.</p>
+                <a href="mailto:contactanos.academy@gmail.com">contactanos.academy@gmail.com</a>
+                <a href="https://wa.me/51950689401">+51 950 689 401</a>
+                <section class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank" class="icono-social">
+                        <img src="imagenes/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/academy._learn/" target="_blank" class="icono-social">
+                        <img src="imagenes/instagram.png" alt="Instagram">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Derechos reservados -->
+    <section class="footer-derechos">
+        <p>© 2024 Academy. Todos los derechos reservados.</p>
+    </section>
+</footer>
+
+<button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

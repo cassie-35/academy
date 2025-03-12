@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Computación en la Nube con AWS</title>
+    <link rel="stylesheet" href="aws.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@600;700&family=Lato:wght@400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-h">
+            <a href="index.html">
+                <img src="imagenes/logo-blanco.png" alt="Academy Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/academy._learn/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/51950689401" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <button id="btnSubir"><i class="fas fa-arrow-up"></i></button>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Curso: Computación en la Nube con AWS</h1>
+            <p>El curso Computación en la Nube con AWS: De Principiante a Experto es una guía completa para dominar los servicios en la nube de Amazon Web Services (AWS), la plataforma de computación en la nube más popular del mundo. Aprenderás los fundamentos de la nube, configuración de entornos, creación y administración de instancias EC2, manejo de almacenamiento S3 y seguridad en AWS. Además, se explorarán servicios avanzados como bases de datos RDS, redes VPC, y estrategias de alta disponibilidad y escalabilidad. Al final del curso, estarás preparado para implementar soluciones seguras y eficientes en la nube, e incluso prepararte para obtener certificaciones oficiales de AWS.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>¿Qué aprenderás?</h2>
+        <div class="info-box">
+            <ul>
+                <li>Conceptos básicos y modelos de computación en la nube.</li>
+                <li>Configuración y administración de instancias EC2.</li>
+                <li>Creación y gestión de almacenamiento en Amazon S3.</li>
+                <li>Configuración de bases de datos relacionales con Amazon RDS.</li>
+                <li>Gestión de usuarios y permisos con AWS IAM.</li>
+            </ul>
+            <ul>
+                <li>Configuración de redes virtuales con VPC (Virtual Private Cloud).</li>
+                <li>Implementación de alta disponibilidad y recuperación ante desastres.</li>
+                <li>Estrategias de escalado horizontal y vertical en AWS</li>
+                <li>Implementación de políticas de seguridad en AWS.</li>
+                <li>Mejores prácticas para la optimización de costos en AWS.</li>
+            </ul>
+        </div>
+        <h2>Contenido del Curso</h2>
+        <p>El curso se divide en 5 partes principales para facilitar tu aprendizaje.</p>
+        
+        <div class="dropdown">
+            <button onclick="toggleDropdown('part1')">Parte 1: Introducción a la Computación en la Nube y AWS</button>
+            <div id="part1" class="dropdown-content">Tema 1: ¿Qué es la nube? Modelos y servicios principales<br>
+                Tema 2: Ventajas de AWS frente a otras plataformas en la nube<br>
+                Tema 3: Configuración de una cuenta de AWS y entorno inicial<br>
+            </div>
+            <button onclick="toggleDropdown('part2')">Parte 2: Fundamentos de AWS</button>
+            <div id="part2" class="dropdown-content">Tema 4: Introducción a la consola de AWS y servicios más usados<br>
+                Tema 5: Amazon S3: Creación y gestión de almacenamiento en la nube<br>
+                Tema 6: Gestión de usuarios y permisos con AWS IAM<br>
+                </div>
+            
+            <button onclick="toggleDropdown('part3')">Parte 3: Computación y Redes</button>
+            <div id="part3" class="dropdown-content">Tema 7: EC2: Creación y administración de instancias<br>
+                Tema 8: Seguridad y control de acceso para instancias EC2<br>
+                Tema 9: Creación de redes privadas con Amazon VPC<br>
+                Tema 10: Proyecto: Implementación de una aplicación web simple en AWS<br>
+        </div>
+            
+            <button onclick="toggleDropdown('part4')">Parte 4: Bases de Datos y Almacenamiento Avanzado</button>
+            <div id="part4" class="dropdown-content">Tema 11: Amazon RDS: Configuración de bases de datos relacionales<br>
+                Tema 12: Almacenamiento EBS: Volúmenes y snapshots<br>
+                Tema 13: Backups y recuperación ante desastres en AWS<br></div>
+            
+            <button onclick="toggleDropdown('part5')">Parte 5: Escalabilidad, Alta Disponibilidad y Seguridad Avanzada</button>
+            <div id="part5" class="dropdown-content">Tema 14: Escalado automático y balanceo de carga con AWS Elastic Load Balancer<br>
+                Tema 15: CloudFront: Distribución de contenido globalmente<br>
+                Tema 16: Estrategias de recuperación ante fallos y alta disponibilidad<br>
+                Tema 17: Políticas de seguridad avanzadas en AWS<br>
+            </div>
+        </div>
+    </div>
+<!-- Instructor -->
+<section class="instructor">
+    <img src="imagenes/martinlopez.jpg" alt="Instructor">
+    <div>
+        <h2>Instructor:</h2>
+        <p><strong>Martín Lopez</strong>  – Experto en Desarrollo Web y Computación en la Nube en Programación y Ciencia de datos</p>
+        <p>Hola, soy Martín. Desde hace más de 8 años me dedico al desarrollo de aplicaciones web y arquitecturas en la nube. He trabajado con startups y grandes empresas, optimizando sus sistemas y mejorando su presencia digital. Mis cursos están diseñados para brindarte conocimientos prácticos y ayudarte a construir proyectos profesionales desde cero.</p>
+    </div>
+</section>
+
+<!-- Comentarios -->
+<section class="comments">
+    <h2>Comentarios:</h2>
+    <div class="comment">⭐⭐⭐⭐⭐ "Muy completo y bien explicado. Ahora me siento seguro para trabajar con AWS en un entorno laboral."</div>
+    <div class="comment">⭐⭐⭐⭐⭐"El curso cubre todo lo esencial para obtener una certificación. Me gustó especialmente la parte de seguridad."</div>
+</section>
+
+<footer class="footer">
+    <!-- Cursos -->
+    <section class="footer-cursos">
+        <h2>Aprende con nuestros expertos</h2>
+        <div class="cursos-container">
+            <div class="cursos-column">
+                <h3>Instructor Diego Ramírez</h3>
+                <a href="#">Python para Principiantes</a>
+                <a href="#">Machine Learning con Python</a>
+                <a href="#">Diseño UX/UI: De Principiante a Profesional</a>
+                <a href="#">SQL para Analistas de Datos</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructor Martín López</h3>
+                <a href="#">Desarrollo Web Full Stack</a>
+                <a href="#">Desarrollo de Aplicaciones con React</a>
+                <a href="#">Computación en la Nube con AWS</a>
+            </div>
+            <div class="cursos-column">
+                <h3>Instructora Valeria Mendoza</h3>
+                <a href="#">Introducción a la Ciberseguridad</a>
+                <a href="#">Java: De 0 a Experto</a>
+                <a href="#">Frontend Avanzado con React</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información general -->
+    <section class="footer-info">
+        <div class="info-container">
+            <!-- Logo -->
+            <div class="info-column">
+                <a href="index.html">
+                    <img src="imagenes/logo-cdr-blanco.png" alt="Logo Academy" class="logo-footer">
+                </a>
+                <p>Accede a cursos de calidad, gratuitos y diseñados por expertos para impulsar tu aprendizaje.</p>
+            </div>
+
+            <!-- Páginas -->
+            <div class="info-column">
+                <h3>Páginas</h3>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <!-- Contacto y redes sociales -->
+            <div class="info-column">
+                <h3>Contáctanos</h3>
+                <p>Nos encontramos disponibles en línea, contáctanos desde cualquier parte del mundo.</p>
+                <a href="mailto:contactanos.academy@gmail.com">contactanos.academy@gmail.com</a>
+                <a href="https://wa.me/51950689401">+51 950 689 401</a>
+                <section class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=61572982275167" target="_blank" class="icono-social">
+                        <img src="imagenes/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/academy._learn/" target="_blank" class="icono-social">
+                        <img src="imagenes/instagram.png" alt="Instagram">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Derechos reservados -->
+    <section class="footer-derechos">
+        <p>© 2024 Academy. Todos los derechos reservados.</p>
+    </section>
+</footer>
+
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
