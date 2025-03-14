@@ -17,17 +17,195 @@
 }
 
 .nosotros-intro h2 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: var(--fuente-subtitulos);
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-subtitulos);
     margin-bottom: 0.8em;
     color: var(--color-azul);
 }
 
 .nosotros-intro p {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-family: var(--fuente-parrafos);
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
     color: var(--color-negro);
     line-height: 1.6;
     margin-bottom: 1em;
 }
 
+.nosotros-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.historia-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.historia-contenedor img {
+    width: 25rem;
+    height: auto;
+}
+
+.historia-texto {
+    max-width: 35rem;
+}
+
+.historia-texto h3 {
+    font-family: var(--fuente-subtitulos);
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-subtitulos);
+    color: var(--color-azul);
+    margin-bottom: 0.8em;
+}
+
+.historia-texto p {
+    font-family: var(--fuente-parrafos);
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
+    color: var(--color-negro);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.nosotros-mision-vision {
+    background: url('imagenes/m-v.png') no-repeat center center/cover;
+    padding: 5em 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mision, .vision {
+    padding: 2em;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-titulos);
+    font-weight: var(--peso-titulos);
+    color: var(--color-blanco);
+    margin-bottom: 0.8em;
+}
+
+p {
+    font-family: var(--fuente-parrafos);
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
+    color: var(--color-blanco);
+    line-height: 1.6;
+}
+
+.valores {
+    text-align: center;
+    padding: 4em 2em;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.valores h2 {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-titulos);
+    font-weight: var(--peso-titulos);
+    color: var(--color-azul);
+}
+
+.valores hr {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--color-azul);
+    border: none;
+    margin: 1em auto;
+}
+
+.valores p {
+    font-family: var(--fuente-parrafos);
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
+    color: var(--color-negro);
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+.valores-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2em;
+}
+
+.valor {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 2em;
+    border-radius: 1em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--color-negro);
+}
+
+.valor:hover {
+    transform: scale(1.08);
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+}
+
+.valor:hover i,
+.valor:hover h3,
+.valor:hover p {
+    color: var(--color-blanco);
+}
+
+.valor i {
+    font-size: 5rem;
+    color: var(--color-negro);
+    margin-bottom: 0.8em;
+    transition: color 0.3s ease-in-out;
+}
+
+.valor h3 {
+    font-family: var(--fuente-subtitulos);
+    font-size: var(--tamano-subtitulos);
+    font-weight: var(--peso-subtitulos);
+    color: var(--color-negro);
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease-in-out;
+}
+
+.valor p {
+    font-size: var(--tamano-parrafos);
+    font-weight: var(--peso-parrafos);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .historia-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .historia-contenedor img {
+        width: 80%;
+        max-width: 18rem;
+    }
+
+    .nosotros-mision-vision {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+
+    .valores-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
