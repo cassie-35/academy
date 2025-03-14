@@ -91,6 +91,82 @@ nav ul li a:hover {
     color: var(--color-marron);
 }
 
+/* Popup */
+.popup {
+    position: fixed;
+    font-family: var(--fuente-subtitulos);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30em; 
+    height: 20em; 
+    border-radius: 1em;
+    background: url('imagenes/fondo-popup.jpg') no-repeat center center/cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.popup-content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); 
+    color: white;
+    padding: 2rem;
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador {
+    margin-top: 1em;
+    font-size: var(--tamano-botones);
+    font-family: var(--fuente-botones);
+    font-style: italic;
+    color: var(--color-marron); 
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    animation: fadeZoomIn 0.5s ease-in-out;
+}
+
+.popup.hide {
+    animation: fadeZoomOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeZoomIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeZoomOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+        visibility: hidden;
+    }
+}
+
 .banner {
     display: grid;
     place-items: center;

@@ -74,8 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(cambiarSlide, 3000); 
 });
 
+/* Formulario */
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
+    const form = document.querySelector("form");
+    const popup = document.getElementById("popup");
+    const contadorElemento = document.getElementById("contador");
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); 
@@ -83,16 +86,42 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(form.action, {
             method: form.method,
             body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
+            headers: {
+                "Accept": "application/json"
+            }
         }).then(response => {
             if (response.ok) {
-                alert("✅ ¡Mensaje enviado con éxito! Nos comunicaremos contigo pronto.");
                 form.reset(); 
+                mostrarPopup(); 
             } else {
-                alert("❌ Hubo un problema al enviar el mensaje. Inténtalo de nuevo.");
+                alert("Hubo un error al enviar el mensaje. Inténtalo nuevamente.");
             }
         }).catch(() => {
-            alert("❌ Error al enviar el formulario.");
+            alert("Error de conexión. Inténtalo más tarde.");
         });
     });
+
+    function mostrarPopup() {
+        popup.classList.add("show");
+
+        let tiempoRestante = 10; // 10 segundos
+        contadorElemento.textContent = tiempoRestante;
+
+        const intervalo = setInterval(() => {
+            tiempoRestante--;
+            contadorElemento.textContent = tiempoRestante;
+
+            if (tiempoRestante <= 0) {
+                clearInterval(intervalo);
+                cerrarPopup();
+            }
+        }, 1000);
+    }
+
+    function cerrarPopup() {
+        popup.classList.add("hide");
+        setTimeout(() => {
+            popup.classList.remove("show", "hide");
+        }, 500); 
+    }
 });
