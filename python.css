@@ -109,7 +109,7 @@ body {
     }
 }
 /* Contenedor principal */
-.container {
+.container-q {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
